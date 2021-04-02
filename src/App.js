@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import "./style/style.css"
 
 import Header from './Components/Header';
 import Portfoliopage from './pages/Portfoliopage';
@@ -20,7 +20,9 @@ import MainPage from "./pages/MainPage";
 
 function App() {
   return (
+
     <Router>
+      <Header />
       <Route exact path="/" component={MainPage} />
       <Route exact path="/portfolio" component={Portfoliopage} />
       <Route exact path="/contact" component={Contact} />
